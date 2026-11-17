@@ -6,6 +6,8 @@ name: CUDA tests (simulated H100)
 # hardware-specific behaviour or timing, so it complements real-GPU testing.
 
 on:
+  push:
+    branches: [verify-gpu-sim]
   workflow_dispatch:
   pull_request:
     paths:
